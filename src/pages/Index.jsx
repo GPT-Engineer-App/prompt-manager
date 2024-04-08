@@ -225,7 +225,7 @@ const Index = () => {
           <Button onClick={login}>Login</Button>
           <Text>
             Don't have an account?{" "}
-            <Button variant="link" onClick={() => setEmail("")}>
+            <Button variant="link" onClick={() => setEmail("register")}>
               Register
             </Button>
           </Text>
