@@ -225,19 +225,10 @@ const Index = () => {
           <Button onClick={login}>Login</Button>
           <Text>
             Don't have an account?{" "}
-            <Button variant="link" onClick={() => setEmail("register")}>
+            <Button variant="link" onClick={() => navigate("/register")}>
               Register
             </Button>
           </Text>
-          {email !== "" && (
-            <FormControl>
-              <FormLabel>Email</FormLabel>
-              <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-              <Button mt={2} onClick={register}>
-                Register
-              </Button>
-            </FormControl>
-          )}
         </VStack>
       </Box>
     );
